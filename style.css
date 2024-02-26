@@ -1,0 +1,361 @@
+/*----------------------------edicion general-------------------------*/
+
+*{  /*aplica a todos los elemntos de la web*/
+    box-sizing: border-box; /*para que los elementos no crezcan al darl espacios internos a los elemntos*/
+}
+
+body
+{
+    font-family: "Roboto"; /*agregar la tipografia*/
+    font-size: 16px; /**para normalizar los rem  rem = 10px para adaptarlos a diferentes panatllas**/
+    background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco)); /*degradado de fondo*/
+}
+
+a{ 
+    display: inline-block; 
+    text-decoration: none;
+    
+}
+
+p{
+    color: black;
+}
+
+.seccion{  /* seccion apra dar padding a elementos*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cuadrado-perfecto{
+
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.cuadrado-perfecto img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+}
+
+:root{   /**Variables de css, se usan con var()**/
+    /**Paleta de colores**/
+--blanco: #FFFFFF;
+--oscuro: #212121;
+--primario: #FFC107;
+--secundario: #0097A7;
+--gris: #757575;
+--gris_claro: #DFE9F3;
+    /**/
+}
+
+/******************************************************************************************************************/
+html{
+font-size: 62.5%;
+box-sizing: border-box;   /*Snipet para respetar el tamaño de los elementos*/
+
+}
+
+
+/*Definimos tamaño de la tipografia para cada h*/
+h1{
+font-size: 3.8rem;  
+text-align: center;
+}
+
+h2{
+font-size: 2.8rem; 
+}
+
+h3{
+font-size: 1.8rem; 
+}
+
+
+.titulo span{ /*estilo del elemento span en todo el proyecto*/
+font-size: 2rem;
+}
+
+.w-100{ /*agregar un ancho del 100% al elemento*/
+width: 100%;
+}
+
+@media (min-width: 768px) {
+.w-100{ /*agregar un ancho del 100% al elemento*/
+width: auto;
+}
+
+}
+
+.flex{
+display: flex;
+}
+
+.alinear-derecha{
+justify-content: flex-end;
+}
+
+/* HEADER INICIO*/
+.hero {  /*para dar fondo al header de la pagina*/
+    background-image: url(../img/banner2.jpg);
+    background-repeat: no-repeat;  /*para que la imagen no se repita*/
+    background-size: cover;  /* para que la imagen tome todo el ancho de la pagina*/
+    height: 45rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{  /*aca damos el fondo oscuro opaco que tiene el header*/
+    position: absolute;  /*para posicionar un elemento segun el contenido padre*/
+    background-color: rgba(0,0,0,.6); /*sintaxis anterior*/
+    background-color: rgb(0 0 0 / 60%); /*sintaxis nueva*/
+    width: 100%;
+    height: 100%;
+    display: flex; /*alineamos las items*/
+    flex-direction: column;
+    align-items: center; /*alineamos Verticalmente el contenido del selector*/
+    justify-content: center;/*alineamos orizontalmente el contenido del selector*/
+}
+
+.contenido-hero h2,  /*damos color al h2 y al parrafo del header*/
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubicacion{  /*alineamos el incono y el texto del div auxiliar*/
+    display: flex;
+    align-items: flex-end;
+}
+/* HEADER FIN*/
+
+/*Seccion de servicios*/
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap; /*si una de las columnas no entra en el espacio, esta columna ira hacia abajo*/
+    margin-left: -15px;
+    
+}
+
+.columna{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-33{  /*Tamaño de las columnas*/
+    width: 33.3%;
+}
+
+
+/* seccion de la galeria */
+
+#galeria h4{  /*organizamos el texto sobre las fotos de la galeria*/
+
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+#galeria img{  /*ponemos en blanco y negro las imagenes de la galeria*/
+
+    filter: grayscale(1);
+
+}
+
+#galeria .cuadrado-perfecto:hover img /*reaccionamos con color al pasar el mouse sobre la imagen*/
+{  
+
+    filter: grayscale(0);
+
+}
+
+#galeria .cuadrado-perfecto:hover h4 /*reaccionamos y desaparecemos el texto al pasar sobre la imagen*/
+{  
+
+    display: none;
+
+}
+
+.columna-50{
+
+    width: 50%;
+}
+
+.empujar-50{
+
+    margin-left: 50%;
+}
+
+.empujar-0{
+    margin-left: 0;
+}
+
+
+
+#contactenos form .form-block textarea{  /* damos formato al area de texto*/
+
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+} 
+
+.columna-41{  /*usamos las columnas para ubicar los elementos*/
+
+    width: 41.66%;
+}
+
+.empujar-58{
+
+    margin-left: 58.33%;
+}
+
+
+.empujar-66{
+
+    margin-left: 66.6%;
+}
+
+#contactenos form .form-block.bloque-ultimo{  
+
+    margin-bottom: 0;
+} 
+
+/* estilos del footer -------------*/
+
+footer.seccion{ /* dar fondo al footer y color a la letra del footer*/
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+
+footer .barra-footer{ /*dar estilo a seccion del footer de derechos reservados*/
+
+    background-color: grey;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+footer ul{ /*eliminamos puntos de las listas y eliminamos paddings de las listas*/
+
+    padding-left: 0;
+    list-style: none;
+    
+}
+
+footer .logo-footer{ /*damos tamaño al logo*/
+
+    width: 100%;
+    padding-left: 30px;
+}
+
+footer p{  /*damos color al parrafo en el footer*/
+
+    color: white;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+footer ul li{   /*damos margen derecha a las listas del footer*/
+
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+footer h3{  
+
+    padding-left: 30px;
+}
+
+.columna-25{
+
+    width: 25%;
+
+}
+
+footer a{  /*damos color al parrafo en el footer*/
+
+    color: white;
+    
+}
+
+
+/* Diseño responsive */
+
+@media(max-width: 767px)
+
+{
+
+    body{
+
+        font-size: 10px;
+    }
+
+    .container{ /*damos tamaño al container maximo de 767px*/
+
+        width: 100%;
+    }
+
+    .columna-mobile-100{ /* columna del 100% de la pantalla para los servicios*/
+
+        width: 100%;
+
+    }
+
+    .columna-mobile-50{ /*columnas de la mitad d ela pantalla para la galeria*/ 
+
+        width: 50%;
+
+    }
+
+    .empujar-mobile-0{ /*organizamos el formulario para que ocupe toda la pantalla*/
+        
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile{
+
+        padding: 0;
+    }
+
+
+    .container{ /*damos tamaño al container maximo de 767px*/
+
+        width: 100%;
+    }
+
+    /* footer*/
+
+    footer{ /*acomodamos los elementos del footer centrando*/
+
+        text-align: center;
+
+    }
+
+    footer .logo-footer{ 
+
+        width: 50%;
+
+    }
+}
+
+
