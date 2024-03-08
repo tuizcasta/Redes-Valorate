@@ -364,13 +364,15 @@ img {
 }
 
 .anunciosinstru2 {
-    display: flex;
-    border: 0.1rem rgb(143, 53, 53) solid;
-    background-color: rgb(218, 214, 214);
-    border-radius: 2rem;
-    overflow: hidden; /*para solucionar bordes dañados*/ 
-    line-height: 1.5;
-    margin: 1rem;
+        
+        display: flex;
+        border: 0.1rem rgb(143, 53, 53) solid;
+        background-color: rgb(218, 214, 214);
+        border-radius: 2rem;
+        overflow: hidden; /*para solucionar bordes dañados*/ 
+        line-height: 1.5;
+        margin: 1rem;   
+    
        
 }
 
