@@ -321,7 +321,7 @@ img {
 }
 
 .anuncioa {
-    flex-basis: calc(33.3% - 1rem);
+    flex-basis: calc(50% - 1rem);
     border: 0.1rem black solid;
     background-color: rgb(218, 214, 214);
     border-top-left-radius: 2rem;
