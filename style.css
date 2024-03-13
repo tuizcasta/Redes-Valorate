@@ -173,7 +173,7 @@ img {
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
     height: 14rem;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
 
     @media (min-width: 1024px) {
         background-image: url(../img/banner2.jpg);
@@ -188,7 +188,7 @@ img {
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
     height: 14rem;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
 
     @media (min-width: 1024px) {
         background-image: url(../img/banner1.jpg);
@@ -202,7 +202,8 @@ img {
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
     height: 14rem;
     position: relative;
-    margin-bottom: 0rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
 
     @media (min-width: 1024px) {
         background-size: cover;
@@ -409,7 +410,7 @@ footer .barra-footer{ /*dar estilo a seccion del footer de derechos reservados*/
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 20px;
     
 }
