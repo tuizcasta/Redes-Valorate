@@ -171,9 +171,9 @@ img {
     background-image: url(../img/banner2.jpg);
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 15rem;
+    height: 14rem;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @media (min-width: 1024px) {
         background-image: url(../img/banner2.jpg);
@@ -182,29 +182,37 @@ img {
     }
 }
 
+.hero2 {  /*para dar fondo al header de la pagina*/
+    background-image: url(../img/banner1.jpg);
+    background-repeat: no-repeat;  /*para que la imagen no se repita*/
+    background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
+    height: 14rem;
+    position: relative;
+    margin-bottom: 1rem;
 
-
-.contenido-hero{  /*aca damos el fondo oscuro opaco que tiene el header*/
-    position: absolute;  /*para posicionar un elemento segun el contenido padre*/
-    background-color: rgba(0,0,0,.6); /*sintaxis anterior*/
-    background-color: rgb(0 0 0 / 60%); /*sintaxis nueva*/
-    width: 100%;
-    height: 100%;
-    display: flex; /*alineamos las items*/
-    flex-direction: column;
-    align-items: center; /*alineamos Verticalmente el contenido del selector*/
-    justify-content: center;/*alineamos orizontalmente el contenido del selector*/
+    @media (min-width: 1024px) {
+        background-image: url(../img/banner1.jpg);
+        background-size: cover;
+        height: 45rem;
+    }
 }
 
-.contenido-hero h2,  /*damos color al h2 y al parrafo del header*/
-.contenido-hero p{
-    color: var(--blanco);
+.whatsapp {  /*para dar fondo al header de la pagina*/
+    background-repeat: no-repeat;  /*para que la imagen no se repita*/
+    background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
+    height: 14rem;
+    position: relative;
+    margin-bottom: 1rem;
+
+    @media (min-width: 1024px) {
+        background-size: cover;
+        height: 45rem;
+    }
 }
 
-.ubicacion{  /*alineamos el incono y el texto del div auxiliar*/
-    display: flex;
-    align-items: flex-end;
-}
+
+
+
 /* HEADER FIN*/
 
 /*Seccion de servicios*/
