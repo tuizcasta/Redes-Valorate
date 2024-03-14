@@ -171,11 +171,11 @@ img {
     background-image: url(../img/banner4.png);
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 22rem;
+    height: 21.7rem;
     position: relative;
     margin-bottom: 0;
 
-    @media (min-width: 720px) {
+    @media (min-width: 768px) {
         background-image: url(../img/banner4.png);
         background-size: cover;
         height: 61rem;
@@ -191,7 +191,7 @@ img {
     margin-top: 0.4rem;
     margin-bottom: 0.1rem;
 
-    @media (min-width: 720px) {
+    @media (min-width: 768px) {
         background-size: cover;
         height: 39rem;
     }
