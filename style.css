@@ -168,46 +168,32 @@ img {
 
 /* HEADER INICIO*/
 .hero {  /*para dar fondo al header de la pagina*/
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner4.png);
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 14rem;
+    height: 26rem;
     position: relative;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0;
 
     @media (min-width: 1024px) {
-        background-image: url(../img/banner2.jpg);
+        background-image: url(../img/banner4.png);
         background-size: cover;
-        height: 45rem;
+        height: 61rem;
     }
 }
 
-.hero2 {  /*para dar fondo al header de la pagina*/
-    background-image: url(../img/banner1.jpg);
-    background-repeat: no-repeat;  /*para que la imagen no se repita*/
-    background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 14rem;
-    position: relative;
-    margin-bottom: 0.3rem;
-
-    @media (min-width: 1024px) {
-        background-image: url(../img/banner1.jpg);
-        background-size: cover;
-        height: 45rem;
-    }
-}
 
 .whatsapp {  /*para dar fondo al header de la pagina*/
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 14rem;
+    height: 12rem;
     position: relative;
     margin-top: 0.4rem;
     margin-bottom: 0.1rem;
 
     @media (min-width: 1024px) {
         background-size: cover;
-        height: 45rem;
+        height: 39rem;
     }
 }
 
