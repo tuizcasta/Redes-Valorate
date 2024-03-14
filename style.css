@@ -171,7 +171,7 @@ img {
     background-image: url(../img/banner4.png);
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
     background-size: 100%;  /* para que la imagen tome todo el ancho de la pagina*/
-    height: 17rem;
+    height: 18rem;
     position: relative;
     margin-bottom: 0;
 
