@@ -11,21 +11,6 @@ body
     background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco)); /*degradado de fondo*/
 }
 
-a{ 
-    display: inline-block; 
-    text-decoration: none;
-    
-}
-
-p{
-    color: black;
-}
-
-.seccion{  /* seccion apra dar padding a elementos*/
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .cuadrado-perfecto{
 
     width: 100%;
@@ -64,29 +49,6 @@ box-sizing: border-box;   /*Snipet para respetar el tamaño de los elementos*/
 }
 
 
-/*Definimos tamaño de la tipografia para cada h*/
-h1{
-font-size: 3.8rem;  
-text-align: center;
-}
-
-h2{
-font-size: 2.8rem; 
-}
-
-h3{
-font-size: 1.8rem; 
-}
-
-
-.titulo span{ /*estilo del elemento span en todo el proyecto*/
-font-size: 2rem;
-}
-
-.w-100{ /*agregar un ancho del 100% al elemento*/
-width: 100%;
-}
-
 @media (min-width: 768px) {
 .w-100{ /*agregar un ancho del 100% al elemento*/
 width: auto;
@@ -98,73 +60,8 @@ width: auto;
 display: flex;
 }
 
-.alinear-derecha{
-justify-content: flex-end;
-}
-
-.seccion {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.adelgazartexto300{
-    font-weight: 300;
-}
-
-.centrartexto{
-    text-align: center;
-}
-
 img {
     max-width: 100%;
-}
-
-.extenderboton{
-    display: block!important;
-}
-
-.contenido-centrado {
-    max-width: 800px;
-}
-
-.tamanioletra {
-    font-size: 2.5rem;
-}
-
-.centrar{
-    justify-content: center;
-}
-
-.boton{
-    color: white;
-    font-weight: 300;
-    font-size: 1.8rem;
-    text-decoration: none;
-    padding: 0.5rem 0.9rem;
-    margin: 2rem;
-    display: inline-block;
-    text-align: center;    
-    border: none;
-}
-
-.boton:hover{
-    cursor: pointer;
-}
-
-.boton-naranja{
-    background-color: rgb(219, 145, 47);
-    
-}
-
-.boton-rojo{
-    background-color: rgb(180, 8, 8);
-}
-
-.boton-valorate{
-    background-color: var(--valorate);
-}
-
-
 
 /* HEADER INICIO*/
 .hero {  /*para dar fondo al header de la pagina*/
@@ -192,7 +89,6 @@ img {
 
 /* HEADER FIN*/
 
-/*Seccion de servicios*/
 
 .row{
 
@@ -200,11 +96,6 @@ img {
     flex-wrap: wrap; /*si una de las columnas no entra en el espacio, esta columna ira hacia abajo*/
     margin-left: -15px;
     
-}
-
-.columna{
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .columna-33{  /*Tamaño de las columnas*/
@@ -218,180 +109,11 @@ img {
     width: 50%;
 }
 
-.empujar-50{
-
-    margin-left: 50%;
-}
-
-.empujar-0{
-    margin-left: 0;
-}
-
-
-
-
-
-.columna-41{  /*usamos las columnas para ubicar los elementos*/
-
-    width: 41.66%;
-}
-
-.empujar-58{
-
-    margin-left: 58.33%;
-}
-
-
-.empujar-66{
-
-    margin-left: 66.6%;
-}
-
-#contactenos form .form-block.bloque-ultimo{  
-
-    margin-bottom: 0;
-} 
-
-
-
-
-
-.anuncios1{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    
-}
-
-.anuncioa {
-    flex-basis: calc(50% - 1rem);
-    border: 0.1rem black solid;
-    background-color: rgb(218, 214, 214);
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    overflow: hidden;
-    
-}
-
-
-.anuncios2{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    
-}
-
-.anunciob{
-    flex-basis: calc(33.3% - 1rem);
-    border: 0.1rem black solid;
-    background-color: rgb(218, 214, 214);
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    overflow: hidden; /*para solucionar bordes dañados*/
-
-}
-  
-.contenidoa{
-    padding: 2rem;
-    text-align: center;
-}
-
-.contenidob{
-    padding: 2rem;
-    text-align: center;
-}
-
-.precio{
-    color: darkred;
-    font-weight: 700;
-}
-
-.anunciosinstru2 {
-        
-        display: flex;
-        border: 0.1rem rgb(143, 53, 53) solid;
-        background-color: rgb(218, 214, 214);
-        border-radius: 2rem;
-        overflow: hidden; /*para solucionar bordes dañados*/ 
-        line-height: 1.5;
-        margin: 1rem;   
-    
-       
-}
-
-.anunciosinstrumentos{
-    padding: 1rem;
-    margin: 0.5rem;
-}
-
-
-.anunciosinstru2 img{
-    padding: 2rem;
-    
-}
-
-/* estilos del footer -------------*/
-
-footer.seccion{ /* dar fondo al footer y color a la letra del footer*/
-    background-color: black;
-    color: white;
-    padding-bottom: 0;
-}
-
-footer .barra-footer{ /*dar estilo a seccion del footer de derechos reservados*/
-
-    background-color: grey;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 0;
-    padding-bottom: 20px;
-    
-}
-
-footer ul{ /*eliminamos puntos de las listas y eliminamos paddings de las listas*/
-
-    padding-left: 0;
-    list-style: none;
-    
-}
-
-footer .logo-footer{ /*damos tamaño al logo*/
-
-    width: 100%;
-    padding-left: 30px;
-}
-
-footer p{  /*damos color al parrafo en el footer*/
-
-    color: white;
-    padding-left: 30px;
-    margin-bottom: 30px;
-}
-
-footer ul li{   /*damos margen derecha a las listas del footer*/
-
-    padding-left: 30px;
-    margin-bottom: 10px;
-}
-
-footer h3{  
-
-    padding-left: 30px;
-}
-
 .columna-25{
 
     width: 25%;
 
 }
-
-footer a{  /*damos color al parrafo en el footer*/
-
-    color: white;
-    
-}
-
 
 /* Diseño responsive */
 
@@ -421,35 +143,10 @@ footer a{  /*damos color al parrafo en el footer*/
 
     }
 
-    .empujar-mobile-0{ /*organizamos el formulario para que ocupe toda la pantalla*/
-        
-        margin-left: 0;
-    }
-
-    .sinpadding-mobile{
-
-        padding: 0;
-    }
-
 
     .container{ /*damos tamaño al container maximo de 767px*/
 
         width: 100%;
     }
 
-    /* footer*/
-
-    footer{ /*acomodamos los elementos del footer centrando*/
-
-        text-align: center;
-
-    }
-
-    footer .logo-footer{ 
-
-        width: 50%;
-
-    }
 }
-
-
