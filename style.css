@@ -11,6 +11,13 @@ body
     background-image: linear-gradient(to top, var(--gris_claro) 0%, var(--blanco)); /*degradado de fondo*/
 }
 
+a{ 
+    display: inline-block; 
+    text-decoration: none;
+    
+}
+
+
 .cuadrado-perfecto{
 
     width: 100%;
@@ -49,19 +56,15 @@ box-sizing: border-box;   /*Snipet para respetar el tamaño de los elementos*/
 }
 
 
-@media (min-width: 768px) {
-.w-100{ /*agregar un ancho del 100% al elemento*/
-width: auto;
-}
-
-}
-
 .flex{
 display: flex;
 }
 
 img {
     max-width: 100%;
+}
+
+
 
 /* HEADER INICIO*/
 .hero {  /*para dar fondo al header de la pagina*/
@@ -98,6 +101,7 @@ img {
     
 }
 
+
 .columna-33{  /*Tamaño de las columnas*/
     width: 33.3%;
 }
@@ -115,6 +119,8 @@ img {
 
 }
 
+
+
 /* Diseño responsive */
 
 @media(max-width: 767px)
@@ -124,11 +130,6 @@ img {
     body{
 
         font-size: 10px;
-    }
-
-    .container{ /*damos tamaño al container maximo de 767px*/
-
-        width: 100%;
     }
 
     .columna-mobile-100{ /* columna del 100% de la pantalla para los servicios*/
@@ -143,10 +144,6 @@ img {
 
     }
 
-
-    .container{ /*damos tamaño al container maximo de 767px*/
-
-        width: 100%;
-    }
-
 }
+
+
