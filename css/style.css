@@ -2,6 +2,7 @@
 
 *{  /*aplica a todos los elemntos de la web*/
     box-sizing: border-box; /*para que los elementos no crezcan al darl espacios internos a los elemntos*/
+    
 }
 
 body
@@ -76,6 +77,8 @@ img {
     height: 18rem;
     position: relative;
     margin-bottom: 1;
+    overflow: hidden; /* Evita el desbordamiento */
+    
 
     @media (min-width: 720px) {
         background-image: url(../img/final.png);
