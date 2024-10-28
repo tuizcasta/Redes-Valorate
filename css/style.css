@@ -79,6 +79,71 @@ img {
     margin-bottom: 1;
     overflow: hidden; /* Evita el desbordamiento */
     
+    @media (min-width: 300px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 13.4rem;
+
+        .clickable-area {
+            top: 75%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+
+    @media (min-width: 390px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 18rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 400px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 18rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 500px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 23rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
+
+    @media (min-width: 600px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 27rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 15%;
+        }
+    }
 
     @media (min-width: 720px) {
         background-image: url(../img/final.png);
@@ -89,7 +154,7 @@ img {
             top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 11%;
+            height: 15%;
         }
     }
 
@@ -102,7 +167,7 @@ img {
             top: 69%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 11%;
+            height: 15%;
         }
     }
 
@@ -116,7 +181,7 @@ img {
             top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 11%;
+            height: 15%;
         }
     }
 
@@ -129,7 +194,7 @@ img {
             top: 59.5%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 8%;
+            height: 10%;
         }
     }
 
@@ -142,7 +207,7 @@ img {
             top: 74%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 8%;
+            height: 10%;
         }
     }
 
@@ -155,7 +220,7 @@ img {
             top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 8%;
+            height: 10%;
         }
     }
 
@@ -168,7 +233,7 @@ img {
             top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
             left: 41%;
             width: 28.3%;
-            height: 8%;
+            height: 10%;
         }
     }
 
@@ -183,6 +248,7 @@ img {
     left: 550px; /* Ajusta según la ubicación deseada */
     width: 380px; /* Ancho del área clickeable */
     height: 59px; /* Alto del área clickeable */
+    background: rgba(255, 255, 100, 1); /* Fondo semitransparente opcional */
     text-indent: -9999px; /* Oculta el texto si no necesitas mostrar nada */
 }
 
