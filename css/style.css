@@ -67,6 +67,8 @@ img {
 
 
 /* HEADER INICIO*/
+
+
 .hero {  /*para dar fondo al header de la pagina*/
     background-image: url(../img/final.png);
     background-repeat: no-repeat;  /*para que la imagen no se repita*/
@@ -79,28 +81,106 @@ img {
         background-image: url(../img/final.png);
         background-size: 100%;
         height: 33.5rem;
+
+        .clickable-area {
+            top: 78%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 11%;
+        }
     }
 
     @media (min-width: 820px) {
         background-image: url(../img/final.png);
         background-size: 100%;
         height: 42rem;
+
+        .clickable-area {
+            top: 69%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 11%;
+        }
+    }
+
+
+    @media (min-width: 950px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 42rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 11%;
+        }
     }
 
     @media (min-width: 1014px) {
         background-image: url(../img/final.png);
         background-size: 100%;
         height: 60.5rem;
+
+        .clickable-area {
+            top: 59.5%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 8%;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 60.5rem;
+
+        .clickable-area {
+            top: 74%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 8%;
+        }
+    }
+
+    @media (min-width: 1366px) {
+        background-image: url(../img/final.png);
+        background-size: 100%;
+        height: 60.5rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 8%;
+        }
     }
 
     @media (min-width: 1450px) {
         background-image: url(../img/final.png);
         background-size: 100%;
         height: 71rem;
+
+        .clickable-area {
+            top: 80%; /* Ajusta la posición y tamaño en pantallas más pequeñas */
+            left: 41%;
+            width: 28.3%;
+            height: 8%;
+        }
     }
 
 
     
+}
+
+/* Estilos del área clickeable */
+.clickable-area {
+    position: absolute;
+    top: 480px; /* Ajusta según la ubicación deseada */
+    left: 550px; /* Ajusta según la ubicación deseada */
+    width: 380px; /* Ancho del área clickeable */
+    height: 59px; /* Alto del área clickeable */
+    text-indent: -9999px; /* Oculta el texto si no necesitas mostrar nada */
 }
 
 /* HEADER FIN*/
